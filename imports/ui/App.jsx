@@ -67,7 +67,7 @@ class App extends Component {
             <div className="container">
                 <header>
                     <h1>Todo List ({this.props.incompleteCount})</h1>
-
+                    
                     <label className="hide-completed">
                         <input
                             type="checkbox"
@@ -78,7 +78,6 @@ class App extends Component {
                         Hide Completed Tasks
                     </label>
                     <AccountsUIWrapper />
-
                     { this.props.currentUser ?
                         <form className="new-task" onSubmit={this.handleSubmit.bind(this)}>
                             <input
